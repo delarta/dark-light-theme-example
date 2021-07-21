@@ -1,0 +1,81 @@
+*, body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variable CSS */
+:root{
+  --pink: #ffc0cb;
+  --black: black;
+  --grey: #494949;
+  --white: white;
+}
+
+.light-theme{
+  --bg: var(--pink);
+  --bg-button: var(--black);
+  --text-button: var(--white);
+  --text: var(--black);
+  --text-secondary: var(--grey);
+}
+
+.dark-theme{
+  --bg: var(--grey);
+  --bg-button: var(--pink);
+  --text-button: var(--black);
+  --text: var(--white);
+  --text-secondary: var(--white);
+}
+
+body{
+  background-color: pink;
+  color: var(--text);
+}
+
+.wrapper{
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+.navbar{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.navbar-right{
+  display: flex;
+  align-items: center;
+}
+
+.menu-item{
+  margin-left: 16px
+}
+
+/* HERO */
+.hero{
+  width: 60%;
+}
+
+.hero-text{
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.hero-description{
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+button{
+  background-color: var(--bg-button);
+  color: var(--text-button);
+  padding: 8px 16px;
+  border: none;
+}
